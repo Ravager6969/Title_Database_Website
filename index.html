@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title Database</title>
+    <link href="styles.css" rel="stylesheet" />
+    <script type="text/javascript" src="src.js"></script>
+</head>
+
+<body>
+    <div class = "flex-container">
+        <h1 id="a">Title Database</h1>
+        <input id="input" autocomplete="off" placeholder="Title">
+        <div class = "buttons">
+            <button onclick="post(document.getElementById('input').value)">Submit Title</button>
+            <button onclick="del(document.getElementById('input').value)">Delete Title</button>
+        </div>
+        <div class="title">Titles</div>
+        <ol id="list"></ol>
+        <div id="id_display">Id: </div>
+    </div>
+</body>
+
+</html>
