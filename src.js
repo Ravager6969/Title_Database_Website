@@ -8,7 +8,7 @@ function clickfunc(){
 function httpGet()
 {
 var xmlHttp = new XMLHttpRequest();
-xmlHttp.open( "GET", 'http://localhost:3000/posts', false ); // false for synchronous request
+xmlHttp.open( "GET", 'https://ravager6969.github.io/Title_Database_Website/posts', false ); // false for synchronous request
 xmlHttp.send( null );
 return xmlHttp.responseText;
 }
@@ -37,7 +37,7 @@ function update(){
 
 function post(t){
     var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open( "POST", 'http://localhost:3000/posts', false ); // false for synchronous request
+    xmlHttp.open( "POST", 'https://ravager6969.github.io/Title_Database_Website/posts', false ); // false for synchronous request
     xmlHttp.setRequestHeader('Content-Type', 'application/json');
     xmlHttp.send(JSON.stringify({
         title : t
@@ -48,7 +48,7 @@ function post(t){
 function del(index){
     var item_id = ids[index-1];
     var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open( "DELETE", 'http://localhost:3000/posts/' + item_id, false ); // false for synchronous request
+    xmlHttp.open( "DELETE", 'https://ravager6969.github.io/Title_Database_Website/posts' + item_id, false ); // false for synchronous request
     xmlHttp.send( null );
 
     update();
